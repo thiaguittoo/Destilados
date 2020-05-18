@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "destilados-6c925": {
+      "hosting": {
+        "Destilados": [
+          "destilados-6c925"
+        ]
+      }
+    }
+  }
+}
