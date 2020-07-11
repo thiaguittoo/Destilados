@@ -20,17 +20,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 
 
 import { environment } from 'src/environments/environment';
 import { EdicaoCategoriaComponent } from './edicao-categoria/edicao-categoria.component';
 import { CadastroCategoriaComponent } from './cadastro-categoria/cadastro-categoria.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EdicaoCategoriaComponent,
-    CadastroCategoriaComponent
+    CadastroCategoriaComponent,
+    CadastroProdutoComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ import { CadastroCategoriaComponent } from './cadastro-categoria/cadastro-catego
     MatCardModule,
     MatInputModule,
     MatIconModule,
-
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
   ],
